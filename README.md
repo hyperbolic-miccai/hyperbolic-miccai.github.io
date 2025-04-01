@@ -1,1 +1,1 @@
-# Hyperbolic Learning for Medical Imaging @ MICCAI 2025
+# Hyperbolic Learning in Action 2024 

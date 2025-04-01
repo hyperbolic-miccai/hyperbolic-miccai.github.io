@@ -1,0 +1,24 @@
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+
+/* Ensure that all team member images are the same size */
+.team-img {
+  width: 300px;          /* Fixed width */
+  height: 300px;         /* Fixed height */
+  object-fit: cover;     /* Ensures the image fills the space without distortion */
+}
+
+.team ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #702DF9;
+}
