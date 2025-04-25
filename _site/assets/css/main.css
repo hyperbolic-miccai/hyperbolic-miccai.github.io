@@ -56,6 +56,19 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
     align-items: center; /* Center vertically */
 }
 
+.conference-logo-title {
+  width: 300px;         /* Adjust size */
+  opacity: 0.95;        /* Slightly see-through */
+  
+  }
+
+@media (min-width: 768px) {
+  .text-md-start .conference-logo-title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .gif-container {
     flex: 1; /* Allow the GIF container to take up space */
     display: flex;

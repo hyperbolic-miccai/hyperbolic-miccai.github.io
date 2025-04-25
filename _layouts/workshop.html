@@ -5,26 +5,51 @@ layout: default
 <div class="page-content">
   <div class="header-background">
     <div class="container-fluid"> <!-- Bootstrap container for responsive content alignment -->
-      <div class="row align-items-center"> <!-- Row with vertical centering -->
-        <div class="col-md-6"> 
-          <img src="{{ site.baseurl }}/assets/img/hyperboloid_rotation_white.gif" alt="Hyperboloid Rotation GIF" class="img-fluid"> <!-- img-fluid makes the image responsive -->
+			<div class="row align-items-center">
+        <div class="col-md-5 d-flex justify-content-center"> 
+          <img src="{{ site.baseurl }}/assets/img/hyperboloid_rotation_white_crop.gif" alt="Hyperboloid Rotation GIF" class="img-fluid"> <!-- img-fluid makes the image responsive -->
         </div>
-        <div class="col-md-6"> 
-          <h1 class="post-title display-4">
-            {% if site.title == "blank" -%}
-                MICCAI 2025 Tutorial on <br>
-                <span class="font-weight-bold text-white">Hyperbolic Learning for <br>Medical Imaging</span>
-            {%- else -%}
-                {{ site.title }}
-            {%- endif %}
-          </h1>
-          <!--<h3 class="font-weight-bold text-white">23.09.2025 | 09:00AM | TBD </h3>-->
+				<div class="col-md-6">
+					<h1 class="post-title display-3 font-weight-bold">
+          Hyperbolic Learning for Medical Imaging
+					</h1>
+					<h1 class="post-title display-5 font-weight-light">MICCAI Tutorial</h1>
+          <!--<h3 class="font-weight-bold display-5 text-white">23.09.2025 | 09:00AM | TBD </h3>-->
         </div>
       </div>
     </div>
   </div>
 </div>
 
+  <!-- Logos section below (white background) -->
+  <div class="sponsor-logos bg-white py-4">
+    <div class="container-fluid text-center">
+      <div class="row justify-content-center align-items-center g-4">
+        <div class="col-auto">
+          <img src="{{ site.baseurl }}/assets/img/basel.png" 
+               alt="University Logo" class="partner-logo img-fluid" style="max-height: 60px;">
+        </div>
+				<div class="col-auto">
+          <img src="{{ site.baseurl }}/assets/img/hospital_basel.png" 
+               alt="University Logo" class="partner-logo img-fluid" style="max-height: 50px;">
+        </div>
+				<div class="col-auto">
+          <img src="{{ site.baseurl }}/assets/img/hslu.png" 
+               alt="University Logo" class="partner-logo img-fluid" style="max-height: 30px;">
+        </div>
+				<div class="col-auto">
+          <img src="{{ site.baseurl }}/assets/img/plymouth.png" 
+               alt="University Logo" class="partner-logo img-fluid" style="max-height: 120px;">
+        </div>
+        <div class="col-auto">
+          <img src="{{ site.baseurl }}/assets/img/miccai2025-logo.png" 
+               alt="MICCAI Logo" class="partner-logo img-fluid" style="max-height: 90px;">
+        </div>
+        <!-- Add more logos here if needed -->
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <div class="wrapper container mt-5">
