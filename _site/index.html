@@ -28,8 +28,6 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="/assets/img//assets/img/cell"/>
-    
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="http://localhost:4000/">
     
@@ -67,11 +65,18 @@
             <ul class="navbar-nav ml-auto flex-nowrap">
 
               <!-- About -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/">About<span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
               </li>
-              
-
+               <!-- Schedule -->
+              <li class="nav-item">
+                <a class="nav-link" href="#schedule">Schedule<span class="sr-only">(current)</span></a>
+              </li>
+                <!-- Organizers -->
+              <li class="nav-item">
+                <a class="nav-link" href="#organizers">Organizers<span class="sr-only">(current)</span></a>
+              </li>
+             
               <!-- Other pages -->
             </ul>
           </div>
@@ -91,11 +96,10 @@
           <img src="/assets/img/hyperboloid_rotation_white_crop.gif" alt="Hyperboloid Rotation GIF" class="img-fluid"> <!-- img-fluid makes the image responsive -->
         </div>
 				<div class="col-md-6">
-					<h1 class="post-title display-3 font-weight-bold">
-          Hyperbolic Learning for Medical Imaging
+					<h1 class="post-title display-4">
+						MICCAI Tutorial: <span class="font-weight-bold text-white"> Hyperbolic Learning for Medical Imaging (HyperMI)</span>
 					</h1>
-					<h1 class="post-title display-5 font-weight-light">MICCAI Tutorial</h1>
-          <!--<h3 class="font-weight-bold display-5 text-white">23.09.2025 | 09:00AM | TBD </h3>-->
+          <h3 class="font-weight-bold display-5 text-white">Daejeon Convention Center | 23.09.2025 | IBS-2F-25 </h3>
         </div>
       </div>
     </div>
@@ -132,7 +136,7 @@
 
   <article>
 
-    <div class="clearfix">
+    <div id="about" class="clearfix">
   <p class="lead">
 		<strong>Modern deep learning in computer vision is primarily driven by networks
 		designed to work on Euclidean manifolds. But is Euclidean geometry truly
@@ -179,7 +183,48 @@
     is your guide to understanding and utilizing hyperbolic geometry in computer vision.
   </p>
 
-<div class="speakers">
+
+
+<div id="schedule" class="speakers mt-5">
+  <h2 class="font-weight-normal">Schedule</h2>
+
+  <table class="table table-bordered table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th class="lead" style="width: 30%">Time</th>
+        <th class="lead" style="width: 70%">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="lead">08:00 - 09:00</td>
+        <td class="lead">Foundations on Non-Euclidean Geometry - <i>Simone Lionetti</i></td>
+      </tr>
+      <tr>
+        <td class="lead">09:00 - 10:00</td>
+        <td class="lead">Deep Learning in Hyperbolic Space - <i>Alvaro Gonzalez-Jimenez</i></td>
+      </tr>
+      <tr class="table-secondary">
+        <td class="lead">10:00 - 10:30</td>
+        <td class="lead">Coffee Break</td>
+      </tr>
+      <tr>
+        <td class="lead">10:30 - 12:15</td>
+        <td class="lead">Hands-on Hyperbolic Network Training - <i>Alvaro Gonzalez-Jimenez</i></td>
+      </tr>
+      <tr>
+        <td class="lead">12:15 - 12:30</td>
+        <td class="lead">Learning and Conclusions - <i>Alvaro Gonzalez-Jimenez</i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+<div id="organizers" class="speakers">
 	<h2 class="font-weight-normal">Organizers</h2>
   <div class="row py-5"> <!-- Start of the row -->
     <div class="col-md-6 col-lg-4"> <!-- Adjust column width as needed -->
@@ -296,23 +341,12 @@
       </div>
     </div>
 	</div> 
-
-
-
-
 </div>
 
-
-
-  
- </div>
-
-    </article>
-</div>
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025   HyperMI. Last updated: April 26, 2025.
+        © Copyright 2025   HyperMI. Last updated: September 09, 2025.
       </div>
     </footer>
 
@@ -333,23 +367,6 @@
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
   <script defer src="/assets/js/common.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-    $('tr:not(.header)').hide();
-
-    $('tr.header').click(function() {
-      $(this).find('span').text(function(_, value) {
-        return value == '-' ? '+' : '-'
-      });
-
-      $(this).nextUntil('tr.header').slideToggle(1, function() {});
-    });
-    });
-  </script>
-
-
-
 
     <!-- MathJax -->
   <script type="text/javascript">
